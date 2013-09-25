@@ -1,0 +1,46 @@
+package cdacLab;
+
+import testCode.*;
+
+
+class Pattern2{
+    
+    public static void main(String[] args) {
+        System.out.println("loop");
+        int n=1;
+        int loop;
+        int i=5;
+        char ch = 'A';
+        
+        
+        for (int k = 1; k <=n; k++) {
+            for(int j=1;j<i;j++){
+                System.out.print("\t");
+            }
+            i--;  
+            
+            if(n>9){
+                break;
+            }
+            
+            loop = n/2 + 1;
+            for(int l=1;l<=loop;l++){
+                System.out.print(ch++ + "\t"); 
+            }
+            --ch;
+            for(int m = loop+1;m<=n;m++){
+                System.out.print(--ch  + "\t");
+            }
+            n=n+2;
+            ch = 'A';
+            System.out.println("");
+        }
+        
+    }
+    
+    
+    
+
+}
+
+
