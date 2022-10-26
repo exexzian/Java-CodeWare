@@ -6,23 +6,23 @@ public class StringPowerSet {
 
 	public static void main(String[] args) {
 
-		long start = System.currentTimeMillis();
+		long start = System.nanoTime();
 		printPowerSet("abc", -1, 3, "");
-		long end = System.currentTimeMillis();
+		long end = System.nanoTime();
 		long time1 = end - start;
 
 		System.out.println("--------------------------------------");
 		
-		start = System.currentTimeMillis();
+		start = System.nanoTime();
 		recursivePowerSet("abc", 0, "");
-		end = System.currentTimeMillis();
+		end = System.nanoTime();
 		long time2 = end - start;
 		
 		System.out.println("--------------------------------------");
 		
-		start = System.currentTimeMillis();
+		start = System.nanoTime();
 		reverseRecursivePowerSet("abc", "");
-		end = System.currentTimeMillis();
+		end = System.nanoTime();
 		long time3 = end - start;
 
 		
