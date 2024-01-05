@@ -1,6 +1,5 @@
 package com.soft.dev.leetcode;
 
-import com.sun.xml.internal.ws.api.streaming.XMLStreamReaderFactory.Default;
 
 public class FunInt {
 
